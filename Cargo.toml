@@ -1,0 +1,11 @@
+[package]
+name = "info-geo"
+version = "0.1.0"
+edition = "2021"
+description = "Information geometry — Fisher information matrices, Riemannian manifolds, natural gradient, KL divergence, and exponential families"
+license = "MIT"
+keywords = ["information-geometry", "fisher", "riemannian", "natural-gradient", "exponential-family"]
+categories = ["mathematics", "science"]
+repository = "https://github.com/SuperInstance/info-geo"
+
+[lib]
