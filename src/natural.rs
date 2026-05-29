@@ -59,13 +59,14 @@ impl NaturalGradient {
     }
 
     /// Adam-like adaptive natural gradient.
+    #[allow(clippy::too_many_arguments)]
     pub fn adaptive_step(
         &self,
         params: &[f64],
         gradient: &[f64],
         fisher: &FisherInformation,
-        moment1: &mut Vec<f64>,
-        moment2: &mut Vec<f64>,
+        moment1: &mut [f64],
+        moment2: &mut [f64],
         t: usize,
         beta1: f64,
         beta2: f64,

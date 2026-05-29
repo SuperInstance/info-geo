@@ -44,7 +44,7 @@ impl FisherInformation {
 
     /// Fisher information for a Gaussian distribution N(μ, σ²).
     /// F_μμ = 1/σ², F_σσ = 2/σ².
-    pub fn gaussian(mu: f64, sigma: f64) -> Self {
+    pub fn gaussian(_mu: f64, sigma: f64) -> Self {
         let s2 = sigma * sigma;
         Self {
             matrix: vec![vec![1.0 / s2, 0.0], vec![0.0, 2.0 / s2]],
